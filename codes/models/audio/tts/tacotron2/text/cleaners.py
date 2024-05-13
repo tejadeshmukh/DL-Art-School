@@ -92,12 +92,12 @@ def transliteration_cleaners(text):
   
   return text
 
-# def english_cleaners(text):
-#     '''Pipeline for Hindi text, focusing on script normalization and cleanup.'''
-#     text = normalize_devanagari_characters(text)
-#     text = collapse_whitespace(text)
-#     # text = remove_unwanted_characters(text)  # Handles quotes, non-Devanagari characters, etc.
-#     return text
+def english_cleaners(text):
+  '''Pipeline for Hindi text, focusing on script normalization and cleanup.'''
+  text = normalize_devanagari_characters(text)
+  text = collapse_whitespace(text)
+  # text = remove_unwanted_characters(text)  # Handles quotes, non-Devanagari characters, etc.
+  return text
 
 def normalize_devanagari_characters(text):
     # Add specific normalization rules here
